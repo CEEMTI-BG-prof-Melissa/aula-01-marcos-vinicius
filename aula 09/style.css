@@ -1,24 +1,49 @@
-a:link{
-  color:red;
+a:link {
+  color: red;
 }
-a:hover{
-  color:blue;
+a:hover {
+  color: blue;
 }
-a:visited{
-  color:yellow;
+a:visited {
+  color: yellow;
 }
-a:focus{
-  border:10px solid black;
+a:focus {
+  border: 10px solid black;
 }
-li:first-child{  
-font-weight:bolder;
+li:first-child {
+  font-weight: bolder;
 }
-li:last-child{
-  color:green;
+li:last-child {
+  color: green;
 }
-li:nth-child(odd){
-  background-color:lightblue;
+li:nth-child(odd) {
+  background-color: lightblue;
 }
-li:nth-child(even){
-  background-color:lavender;
+li:nth-child(even) {
+  background-color: lavender;
+}
+li:not(:first-child) {
+  font-style: italic;
+}
+input[required],
+textarea[required] {
+  border: 2px solid orange;
+  padding: 5px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 8px rgba(0, 0, 255, 0.7);
+  outline: none;
+}
+input[type="email"]:valid {
+  border: 2px solid green;
+}
+input[type="email"]:invalid {
+  border: 2px solid red;
+}
+input[type="checkbox"]:checked + br + button {
+  color: green;
+}
+:is(h1, h2, h3) {
+  color: darkblue;
 }
