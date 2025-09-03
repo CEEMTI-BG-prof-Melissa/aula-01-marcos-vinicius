@@ -1,23 +1,17 @@
+p::first-letter {
+    color: blue;
+}
+
+p.importante:first-line {
+    background-color: yellow;
+}
 
 h1::before {
     content: "INÍCIO ";
     color: red;
 }
 
-h1::selection {
-    background-color: black;
-    color: white;
-}
-
-p:first-of-type::first-letter {
-    color: blue;
-}
-
-p:nth-of-type(2)::first-line {
-    background-color: yellow;
-}
-
-p:last-of-type::after {
+p.destaque::after {
     content: " FIM";
     color: green;
 }
@@ -28,11 +22,12 @@ li::marker {
 
 ::selection {
     background-color: gray;
+    color: initial;
 }
 
 input::placeholder {
     color: purple;
-    background-color: #f0f0f0;
+    background-color: #d3d3d3;
 }
 
 p::before {
@@ -40,12 +35,16 @@ p::before {
     color: blue;
 }
 
-p.destaque::first-line {
+p.destaque:first-line {
     background-color: pink;
+}
+
+h1::selection {
+    background-color: black;
+    color: white;
 }
 
 p::first-letter {
     color: red;
     font-size: 150%;
 }
-
