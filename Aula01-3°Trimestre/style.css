@@ -48,3 +48,5 @@ p::first-letter {
     color: red;
     font-size: 150%;
 }
+imput::placeholder{
+    background-color:lightgray;
